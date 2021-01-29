@@ -16,4 +16,20 @@ extension Item {
         request.predicate = predicate
         return request
     }
+    
+    var name: String {
+        get {
+            return name_ ?? ""
+        }
+        set {
+            name_ = newValue
+        }
+    }
 }
+
+let itemFormatter: DateFormatter = {
+    let formatter = DateFormatter()
+    formatter.dateStyle = .short
+    formatter.timeStyle = .medium
+    return formatter
+}()
