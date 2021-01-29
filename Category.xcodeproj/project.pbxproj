@@ -13,6 +13,8 @@
 		F4024EB925C436AC00AAD554 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4024EB825C436AC00AAD554 /* Preview Assets.xcassets */; };
 		F4024EBB25C436AC00AAD554 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4024EBA25C436AC00AAD554 /* Persistence.swift */; };
 		F4024EBE25C436AC00AAD554 /* Category.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4024EBC25C436AC00AAD554 /* Category.xcdatamodeld */; };
+		F41D1FA125C43AB400EA1E6A /* NewItemSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41D1FA025C43AB400EA1E6A /* NewItemSheet.swift */; };
+		F41D1FA425C43B4D00EA1E6A /* Item+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41D1FA325C43B4D00EA1E6A /* Item+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F4024EBA25C436AC00AAD554 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F4024EBD25C436AC00AAD554 /* Category.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Category.xcdatamodel; sourceTree = "<group>"; };
 		F4024EBF25C436AC00AAD554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F41D1FA025C43AB400EA1E6A /* NewItemSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemSheet.swift; sourceTree = "<group>"; };
+		F41D1FA325C43B4D00EA1E6A /* Item+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			children = (
 				F4024EB125C436AA00AAD554 /* CategoryApp.swift */,
 				F4024EB325C436AA00AAD554 /* ContentView.swift */,
+				F41D1FA025C43AB400EA1E6A /* NewItemSheet.swift */,
+				F41D1FA325C43B4D00EA1E6A /* Item+Extensions.swift */,
 				F4024EB525C436AC00AAD554 /* Assets.xcassets */,
 				F4024EBA25C436AC00AAD554 /* Persistence.swift */,
 				F4024EBF25C436AC00AAD554 /* Info.plist */,
@@ -144,7 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41D1FA125C43AB400EA1E6A /* NewItemSheet.swift in Sources */,
 				F4024EBB25C436AC00AAD554 /* Persistence.swift in Sources */,
+				F41D1FA425C43B4D00EA1E6A /* Item+Extensions.swift in Sources */,
 				F4024EB425C436AA00AAD554 /* ContentView.swift in Sources */,
 				F4024EB225C436AA00AAD554 /* CategoryApp.swift in Sources */,
 				F4024EBE25C436AC00AAD554 /* Category.xcdatamodeld in Sources */,
@@ -280,7 +288,7 @@
 				DEVELOPMENT_TEAM = ENAZ3377RP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Category/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +310,7 @@
 				DEVELOPMENT_TEAM = ENAZ3377RP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Category/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
