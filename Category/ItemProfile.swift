@@ -39,6 +39,9 @@ struct ItemProfile: View {
                                 trailing:
                                     Button (action: {
                                         if isEditing {
+                                            ///Why is this line (44) dismissing back to content view
+                                            ///and then popping this view open again?
+                                            item.timestamp = Date()
                                             saveItem() }
                                         withAnimation {
                                             if !errorAlertIsPresented {
