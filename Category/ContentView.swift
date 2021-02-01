@@ -26,7 +26,7 @@ struct ContentView: View {
                     NavigationLink(
                         destination: ItemProfile(item: item),
                         label: {
-                            Text("\(item.name) = \(item.timestamp!, formatter: itemFormatter)")
+                            Text("\(item.name) = \(item.timestamp ?? Date(), formatter: itemFormatter)")
                         })
                 }
                 .onDelete(perform: deleteItems)

@@ -38,7 +38,8 @@ struct ItemProfile: View {
                                     }),
                                 trailing:
                                     Button (action: {
-                                        if isEditing { saveItem() }
+                                        if isEditing {
+                                            saveItem() }
                                         withAnimation {
                                             if !errorAlertIsPresented {
                                                 self.isEditing.toggle()
@@ -59,7 +60,7 @@ struct ItemProfile: View {
             if item.name.isEmpty {
                 throw ValidationError.missingName
             }
-//            item.timestamp = Date()
+            
             try viewContext.save()
         } catch {
             errorAlertTitle = (error as? LocalizedError)?.errorDescription ?? "An error occurred"
@@ -80,14 +81,12 @@ extension ItemProfile {
     }
 }
 
-
-
+//
 //struct ItemProfile_Previews: PreviewProvider {
 //static var previews: some View {
 //
 //    ItemProfile(item: item)
 //            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-//
-//
 //    }
 //}
+
